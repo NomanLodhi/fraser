@@ -116,7 +116,6 @@
     justify-content: center;
     background-color: black !important;
     color: white !important;
-    height: 500px !important;
 }
 .btn-package{
     display: flex;
@@ -161,8 +160,9 @@
         height: 1500px;
     }
     .card-package{
-        height: 600px !important;
+        padding: 0 !important;
     }
+
     .navbar-collapse-small{
         background-color: black !important;
     }
