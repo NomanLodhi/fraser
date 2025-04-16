@@ -59,10 +59,10 @@
 
 
 const smoothScroll=()=>{
-    gsap.registerPlugin(ScrollTrigger);
+   
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
+gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true
@@ -95,3 +95,7 @@ ScrollTrigger.refresh();
 
 }
 smoothScroll();
+
+
+
+
