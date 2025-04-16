@@ -161,7 +161,7 @@
         height: 1500px;
     }
     .card-package{
-        min-height: 500px !important;
+        height: 600px !important;
     }
     .navbar-collapse-small{
         background-color: black !important;
