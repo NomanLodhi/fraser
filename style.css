@@ -157,10 +157,11 @@
         padding: 0;
     } 
     .sec-4{
-        height: 1500px;
+        height: 1800px;
     }
     .card-package{
         padding: 0 !important;
+        width: 500px !important;
     }
 
     .navbar-collapse-small{
