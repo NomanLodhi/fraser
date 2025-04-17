@@ -58,15 +58,17 @@
   
 
 
-const smoothScroll=()=>{
-   
-
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -93,8 +95,11 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-}
+
 smoothScroll();
+// gsap.registerPlugin(ScrollTrigger);
+
+
 
 
 
